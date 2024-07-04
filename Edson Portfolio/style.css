@@ -1,0 +1,189 @@
+
+
+body {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    url("./assets/background.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: var(--font-size-normal);
+}
+
+
+
+.headerTop{
+    color: #FFF6E5;
+}
+
+
+.navbar-collapse{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+ .navbar-nav a{
+     font-size: large !important;
+     font-weight: bold !important;
+} 
+
+
+.navbar-nav a:hover{
+   color: #6C6A61 !important;
+} 
+
+
+.navbar-brand{
+    font-weight: bold !important;
+}
+
+
+
+.headerWrapper {
+    padding: 10rem;
+    gap: 16px;
+   
+}
+
+
+.headerTitle{
+    font-size: 70px;
+}
+
+.btn{
+    
+    color: black !important;
+}
+
+
+.skillHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.skillHeader h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.skillWrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    
+}
+
+.skillBody img{
+    height: 150px;
+}
+
+.expHeader{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+}
+
+
+
+.expImg img{
+    height: 300px;
+    
+}
+
+
+.expData {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+
+}
+
+.expData h3{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+.expImg {
+    
+    padding-top: 3rem;
+    text-align: center;
+}
+
+
+
+.projHeader{
+
+    padding-top: 3rem;
+}
+
+
+.gallery img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+
+  .projWrapper{
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .projHeader{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+  }
+
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .card-body a {
+    margin-top: auto;
+    text-align: center;
+    padding-top: 10px;
+  }
