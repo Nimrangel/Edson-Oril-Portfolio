@@ -25,12 +25,20 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+
+    <script
+      src="https://kit.fontawesome.com/57bff9a75f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #c1c7c6">
+    <nav
+      class="navbar navbar-expand-lg footer-navbar"
+      style="background-color: #1f2833"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" style="color: #66fcf1" href="#">Home</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -47,29 +55,133 @@
             <a class="nav-link" href="#skill">Skills</a>
             <a class="nav-link" href="#project">Projects</a>
             <a class="nav-link" href="#experience">Experience</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="./assets/OrilEdsonM.pdf">Resume</a>
-            <!-- <a href="./assets/OrilEdsonM.pdf" class="download" download="resume.pdf">Download Resume</a> -->
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Resume</a>
           </div>
         </div>
       </div>
     </nav>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Resume</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="navResume text-center">
+              
+              <iframe src="./assets/OrilEdsonM.pdf" class="resume"></iframe>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <a href="./assets/OrilEdsonM.pdf"><button type="button" class="btn btn-primary">Download Resume</button></a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header id="title" class="title">
+      <nav class="navbar navbar-dark" style="background-color: #1f2833">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: #66fcf1"
+            >Edson's Portfolio</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skill">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#project">Project</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModalRes">Resume</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="modal fade" id="exampleModalRes" tabindex="-1" aria-labelledby="exampleModalLabelRes" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabelRes">Resume</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="navResume text-center">
+              
+              <iframe src="./assets/OrilEdsonM.pdf" class="resume"></iframe>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <a href="./assets/OrilEdsonM.pdf"><button type="button" class="btn btn-primary">Download Resume</button></a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Header -->
 
-    <header id="header" class="header pt-5 px-2">
+    <section id="header" class="header pt-5 px-2">
       <div class="headerWrapper">
         <div class="headerTop">
           <h1 class="headerTitle">
-            <span>Hi! I'm <b style="color: aqua">Edson M. Oril</b></span>
+            <span>Hi! I'm <b style="color: #66fcf1">Edson M. Oril</b></span>
           </h1>
           <p>Aspiring Fullstack /FrontEnd /BackEnd Developer</p>
         </div>
-        <div class="btn">
-          <button type="button" class="btn btn-info">Contact Me</button>
+        <div class="headerBtn">
+          <a href="#about">
+            <button type="button">Contact Me</button>
+          </a>
         </div>
       </div>
-    </header>
+    </section>
 
     <!-- Skills -->
     <section id="skill" class="skill">
@@ -85,7 +197,6 @@
           <div class="row text-center pt-5 mt-5">
             <div class="col-md-3">
               <h2>HTML</h2>
-              <br />
               <img src="./assets/html.png" alt="html" />
             </div>
 
@@ -108,7 +219,7 @@
           <div class="row text-center pt-5 mt-5">
             <div class="col-md-3">
               <h2>React JS</h2>
-              <br />
+            
               <img src="./assets/react.png" alt="react" />
             </div>
 
@@ -119,11 +230,11 @@
 
             <div class="col-md-3">
               <h2>Angular</h2>
-              <img src="./assets/anuglar.png" alt="angular" />
+              <img src="./assets/angular.png" alt="angular" />
             </div>
 
             <div class="col-md-3">
-              <h2>Javascript</h2>
+              <h2>SQL</h2>
               <img src="./assets/sql.png" alt="sql" />
             </div>
           </div>
@@ -133,8 +244,8 @@
 
     <!-- Projects -->
     <section id="project" class="project">
-      <div class="projWrapper">
-        <div class="projHeader text-center">
+      <div class="projWrapper" style="background-color: #0b0c10">
+        <div class="projHeader text-center" style="color: #66fcf1">
           <h1>Projects</h1>
           <p>Here are my completed and ongoing projects</p>
         </div>
@@ -166,7 +277,9 @@
                 <div class="modal-dialog modal-lg" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="imageModalLabel">Menu Project</h5>
+                      <h5 class="modal-title" id="imageModalLabel">
+                        Menu Project
+                      </h5>
                       <button
                         type="button"
                         class="close"
@@ -188,36 +301,48 @@
                             data-slide-to="0"
                             class="active"
                           ></li>
-                        
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="./assets/menu/menu-project.png" class="d-block w-100" alt="" />
-                            <img src="./assets/menu/menu-login.png" class="d-block w-100" alt="" />
-                            <img src="./assets/menu/menu-recipe.png" class="d-block w-100" alt="" />
-                            <img src="./assets/menu/menu-egg.png" class="d-block w-100" alt="" />
-                           
-                         
+                            <img
+                              src="./assets/menu/menu-project.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/menu/menu-login.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/menu/menu-recipe.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/menu/menu-egg.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                          </div>
+                          <a
+                            class="carousel-control-prev"
+                            href="#carouselExampleIndicators"
+                            role="button"
+                            data-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="sr-only">Next</span>
+                          </a>
                         </div>
-                        <a
-                          class="carousel-control-prev"
-                          href="#carouselExampleIndicators"
-                          role="button"
-                          data-slide="prev"
-                        >
-                        
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="sr-only">Next</span>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
               <div class="card-body">
                 <h3 class="card-text">Menu Project</h3>
                 <p class="card-text">
@@ -227,7 +352,7 @@
                 <p class="card-text">Components: Home, About and Login Page</p>
                 <a
                   href="https://github.com/Nimrangel/Edson-Project-Menu/tree/main/Edson%20Menu/edson-menu"
-                  >View Code</a
+                  ><button type="button">View Code</button></a
                 >
               </div>
             </div>
@@ -259,7 +384,9 @@
                 <div class="modal-dialog modal-lg" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="imageModalLabel1">Shopping List Project</h5>
+                      <h5 class="modal-title" id="imageModalLabel1">
+                        Shopping List Project
+                      </h5>
                       <button
                         type="button"
                         class="close"
@@ -281,44 +408,47 @@
                             data-slide-to="1"
                             class="active"
                           ></li>
-                        
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="./assets/shopping/landing.png" class="d-block w-100" alt="" />
-                            <img src="./assets/shopping/list.png" class="d-block w-100" alt="" />
-                            
-                           
-                         
+                            <img
+                              src="./assets/shopping/landing.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/shopping/list.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                          </div>
+                          <a
+                            class="carousel-control-prev"
+                            href="#carouselExampleIndicators1"
+                            role="button"
+                            data-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="sr-only">Next</span>
+                          </a>
                         </div>
-                        <a
-                          class="carousel-control-prev"
-                          href="#carouselExampleIndicators1"
-                          role="button"
-                          data-slide="prev"
-                        >
-                        
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="sr-only">Next</span>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
               <div class="card-body">
                 <h3 class="card-text">Shopping List Project</h3>
                 <p class="card-text">
-                  I've created this Menu project using React JS 
+                  I've created this Menu project using React JS
                 </p>
                 <p class="card-text">Components: Home, Search Bar</p>
                 <a
                   href="https://github.com/Nimrangel/shopping-list/tree/main/shopping-list"
-                  >View Code</a
+                  ><button type="button">View Code</button></a
                 >
               </div>
             </div>
@@ -350,7 +480,9 @@
                 <div class="modal-dialog modal-lg" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="imageModalLabel2">Bootstrap Project</h5>
+                      <h5 class="modal-title" id="imageModalLabel2">
+                        Bootstrap Project
+                      </h5>
                       <button
                         type="button"
                         class="close"
@@ -372,47 +504,75 @@
                             data-slide-to="2"
                             class="active"
                           ></li>
-                        
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="./assets/bootstrap/home.png" class="d-block w-100" alt="" />
-                            <img src="./assets/bootstrap/2ndpage.png" class="d-block w-100" alt="" />
-                            <img src="./assets/bootstrap/3rdpage.png" class="d-block w-100" alt="" />
-                            <img src="./assets/bootstrap/4thpage.png" class="d-block w-100" alt="" />
-                            <img src="./assets/bootstrap/5thpage.png" class="d-block w-100" alt="" />
-                            <img src="./assets/bootstrap/6thpage.png" class="d-block w-100" alt="" />
-                            <img src="./assets/bootstrap/footer.png" class="d-block w-100" alt="" />
-
+                            <img
+                              src="./assets/bootstrap/home.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/bootstrap/2ndpage.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/bootstrap/3rdpage.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/bootstrap/4thpage.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/bootstrap/5thpage.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/bootstrap/6thpage.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/bootstrap/footer.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                          </div>
+                          <a
+                            class="carousel-control-prev"
+                            href="#carouselExampleIndicators2"
+                            role="button"
+                            data-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="sr-only">Next</span>
+                          </a>
                         </div>
-                        <a
-                          class="carousel-control-prev"
-                          href="#carouselExampleIndicators2"
-                          role="button"
-                          data-slide="prev"
-                        >
-                        
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="sr-only">Next</span>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
               <div class="card-body">
                 <h3 class="card-text">Bootstrap Project</h3>
                 <p class="card-text">
-                  I've created this Menu project using HTML, CSS and BootStrap and also added Google Fonts and Font Awesome
+                  I've created this Menu project using HTML, CSS and BootStrap
+                  and also added Google Fonts and Font Awesome
                 </p>
-                <p class="card-text">Components: Home, Feature section, Our Work, Product, Testimonial, Our History, and Image Gallery</p>
-                <a
-                  href="https://github.com/Nimrangel/bootstrap-project"
-                  >View Code</a
+                <p class="card-text">
+                  Components: Home, Feature section, Our Work, Product,
+                  Testimonial, Our History, and Image Gallery
+                </p>
+                <a href="https://github.com/Nimrangel/bootstrap-project"
+                  ><button type="button">View Code</button></a
                 >
               </div>
             </div>
@@ -444,7 +604,9 @@
                 <div class="modal-dialog modal-lg" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="imageModalLabel3">Cat Care Project</h5>
+                      <h5 class="modal-title" id="imageModalLabel3">
+                        Cat Care Project
+                      </h5>
                       <button
                         type="button"
                         class="close"
@@ -466,45 +628,66 @@
                             data-slide-to="3"
                             class="active"
                           ></li>
-                        
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="./assets/catCare/home.png" class="d-block w-100" alt="" />
-                            <img src="./assets/catCare/2ndpage.png" class="d-block w-100" alt="" />
-                            <img src="./assets/catCare/3rdpage.png" class="d-block w-100" alt="" />
-                            <img src="./assets/catCare/gallery.png" class="d-block w-100" alt="" />
-                            <img src="./assets/catCare/home.png" class="d-block w-100" alt="" />
-                           
+                            <img
+                              src="./assets/catCare/home.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/catCare/2ndpage.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/catCare/3rdpage.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/catCare/gallery.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/catCare/home.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                          </div>
+                          <a
+                            class="carousel-control-prev"
+                            href="#carouselExampleIndicators3"
+                            role="button"
+                            data-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="sr-only">Next</span>
+                          </a>
                         </div>
-                        <a
-                          class="carousel-control-prev"
-                          href="#carouselExampleIndicators3"
-                          role="button"
-                          data-slide="prev"
-                        >
-                        
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="sr-only">Next</span>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
               <div class="card-body">
                 <h3 class="card-text">Cat Care Project</h3>
                 <p class="card-text">
-                  I've created this Cat Care project to know more about cats and using HTML, CSS and BootStrap and also added Google Fonts and Font Awesome
+                  I've created this Cat Care project to know more about cats and
+                  using HTML, CSS and BootStrap and also added Google Fonts and
+                  Font Awesome
                 </p>
-                <p class="card-text">Components: Home, Features, Why Does My Cat!, Gallery</p>
+                <p class="card-text">
+                  Components: Home, Features, Why Does My Cat!, Gallery
+                </p>
                 <a
                   href="https://github.com/Nimrangel/first-html-project/tree/main/Project1.0"
-                  >View Code</a
+                  ><button type="button">View Code</button></a
                 >
               </div>
             </div>
@@ -536,7 +719,9 @@
                 <div class="modal-dialog modal-lg" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="imageModalLabel4">API user Project</h5>
+                      <h5 class="modal-title" id="imageModalLabel4">
+                        API user Project
+                      </h5>
                       <button
                         type="button"
                         class="close"
@@ -558,44 +743,45 @@
                             data-slide-to="4"
                             class="active"
                           ></li>
-                        
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="./assets/api/home.png" class="d-block w-100" alt="" />
-                            
-                           
+                            <img
+                              src="./assets/api/home.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                          </div>
+                          <a
+                            class="carousel-control-prev"
+                            href="#carouselExampleIndicators4"
+                            role="button"
+                            data-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="sr-only">Next</span>
+                          </a>
                         </div>
-                        <a
-                          class="carousel-control-prev"
-                          href="#carouselExampleIndicators4"
-                          role="button"
-                          data-slide="prev"
-                        >
-                        
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="sr-only">Next</span>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
               <div class="card-body">
                 <h3 class="card-text">User API Project</h3>
                 <p class="card-text">
-                  This Project is created for me to practice and get to know more about API usage and maintenance. Auto generation of User and details.
+                  This Project is created for me to practice and get to know
+                  more about API usage and maintenance. Auto generation of User
+                  and details.
                 </p>
-        
-                
+
                 <p class="card-text">Components: Home and Profile</p>
                 <a
                   href="https://github.com/Nimrangel/API-project/tree/main/user-practice"
-                  >View Code</a
+                  ><button type="button">View Code</button></a
                 >
               </div>
             </div>
@@ -627,7 +813,9 @@
                 <div class="modal-dialog modal-lg" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="imageModalLabel5">Angular and Typescript Project</h5>
+                      <h5 class="modal-title" id="imageModalLabel5">
+                        Angular and Typescript Project
+                      </h5>
                       <button
                         type="button"
                         class="close"
@@ -649,61 +837,56 @@
                             data-slide-to="5"
                             class="active"
                           ></li>
-                        
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="./assets/angularProject.png" class="d-block w-100" alt="" />
-                            
-                           
+                            <img
+                              src="./assets/angularProject.png"
+                              class="d-block w-100"
+                              alt=""
+                            />
+                          </div>
+                          <a
+                            class="carousel-control-prev"
+                            href="#carouselExampleIndicators5"
+                            role="button"
+                            data-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="sr-only">Next</span>
+                          </a>
                         </div>
-                        <a
-                          class="carousel-control-prev"
-                          href="#carouselExampleIndicators5"
-                          role="button"
-                          data-slide="prev"
-                        >
-                        
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="sr-only">Next</span>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
               <div class="card-body">
                 <h3 class="card-text">Angular and Typescript Project</h3>
                 <p class="card-text">
-                  This is an ongiong Project of mine which involves Angular and Typescript
+                  This is an ongiong Project of mine which involves Angular and
+                  Typescript
                 </p>
-             
+
                 <p class="card-text">Components: Home</p>
                 <a
                   href="https://github.com/Nimrangel/angular-project/tree/main/angular-lesson"
-                  >View Code</a
+                  ><button type="button">View Code</button></a
                 >
               </div>
             </div>
           </div>
-
-       </div>   
+        </div>
       </div>
-
     </section>
 
     <!-- experience -->
 
-    <section
-      id="experience"
-      class="experience"
-      style="background-color: #c1c7c6"
-    >
-      <div class="expWrapper">
+    <section id="experience" class="experience">
+      <div class="expWrapper" style="background-color: #1f2833">
         <div class="expHeader text-center">
           <h1>Experience</h1>
           <p>
@@ -714,7 +897,7 @@
             opening and I hope that your company will consider me.
           </p>
         </div>
-        <div class="text-center mt-5 pt-5">
+        <div class="text-center mt-5 pt-5" style="color: #66fcf1">
           <h2>Data Analyst Experience</h2>
         </div>
 
@@ -863,7 +1046,7 @@
           </div>
         </div>
 
-        <div class="text-center mt-5 pt-5">
+        <div class="text-center mt-5 pt-5" style="color: #66fcf1">
           <h2>BPO (Callcenter) Experience</h2>
         </div>
 
@@ -903,9 +1086,12 @@
                       ></button>
                     </div>
                     <div class="modal-body">
-                      Responsibilites: Customer Service Start-End Date: May 2022
-                      - Sept 2022 Location: 15th floor Robinsons Cyberscape
-                      Gamma, Pasig City
+                      <p>Responsibilites: Customer Service</p>
+                      <p>Start-End Date: May 2022 - Sept 2022</p>
+                      <p>
+                        Location: 15th floor Robinsons Cyberscape Gamma, Pasig
+                        City
+                      </p>
                       <img
                         src="./assets/clearsource.png"
                         class="img-fluid"
@@ -1022,8 +1208,10 @@
                     <div class="modal-body">
                       <p>Responsibilities: Customer Service</p>
                       <p>Start-End Date: November 2020 - April 2021</p>
-                      Location: W City Center, BGC, corner 30th St 7th Ave,
-                      Taguig
+                      <p>
+                        Location: W City Center, BGC, corner 30th St 7th Ave,
+                        Taguig
+                      </p>
                       <img
                         src="./assets/edgepark.png"
                         class="img-fluid"
@@ -1082,8 +1270,10 @@
                     <div class="modal-body">
                       <p>Responsibilities: Loyalty Retention Specialist</p>
                       <p>Start-End Date: June 2018 - September 2019</p>
-                      Location: SM BPO Building, Taytay Diversion Rd. Dolores,
-                      Taytay
+                      <p>
+                        Location: SM BPO Building, Taytay Diversion Rd. Dolores,
+                        Taytay
+                      </p>
                       <img
                         src="./assets/bell.png"
                         class="img-fluid"
@@ -1152,7 +1342,7 @@
                         Specialist, Customer Service
                       </p>
                       <p>Start-End Date: June 2015 - January 2018</p>
-                      Location: Techno Plaza one, Eastwood, Quezon City
+                      <p>Location: Techno Plaza one, Eastwood, Quezon City</p>
                       <img
                         src="./assets/concentrix.png"
                         class="img-fluid"
@@ -1211,7 +1401,9 @@
                     <div class="modal-body">
                       <p>Responsibilities: Sales Representative</p>
                       <p>Start-End Date: February 2013 - May 2015</p>
-                      Location: Rockwell Business center, Ortigas, Pasig City
+                      <p>
+                        Location: Rockwell Business center, Ortigas, Pasig City
+                      </p>
                       <img
                         src="./assets/teleperformance.png"
                         class="img-fluid"
@@ -1236,6 +1428,69 @@
       </div>
     </section>
 
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="aboutWrapper">
+        <div class="aboutTitle text-center py-5" style="color: #66fcf1">
+          <h1>About</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="aboutHeader">
+              <img src="./assets/2x2 picture.jpg" alt="photo" />
+              <h2 class="pt-3">Edson M. Oril</h2>
+              <p>Date of Birth: February 2, 1993</p>
+              <p>
+                Email:
+                <a href="mailtto:edxellv2@gmail.com">edxellv2@gmail.com</a>
+              </p>
+              <p>Phone Number: 09776281283</p>
+              <div class="aboutSocial d-flex flex-row">
+                <a href="https://github.com/Nimrangel"
+                  ><i class="fab fa-github fa-2xl"></i
+                ></a>
+                <a href="https://www.facebook.com/MynameRARE"
+                  ><i class="fab fa-facebook-square fa-2xl"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/edson-oril-583216253/"
+                  ><i class="fab fa-linkedin fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="aboutMsg">
+              <h2>Learnings:</h2>
+              <p>
+                Udemy: Fullstack Web Development with React JS, Angular and Node
+                JS
+              </p>
+              <p>
+                Started with Udemy March 2024 and still ongoing progress with
+                the modules
+              </p>
+              <h2>School:</h2>
+              <p>Gateways Institute of Science and Technology 2010- 2013</p>
+              <p>
+                Course: Computer Science and Passed NC4 (Computer Programming)
+              </p>
+              <h2>Hobbies:</h2>
+              <p>
+                Computer games such as: Dota 2, Leage of Legend, Armored Core
+                1-6 etc. . .
+              </p>
+              <h2>Favorite Languges:</h2>
+              <div class="aboutImg">
+                <img src="./assets/react.png" alt="react" />
+                <img src="./assets/typescript.png" alt="tyepscript" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- JS script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -1243,13 +1498,37 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $('#imageModal').on('show.bs.modal', function (event) {
+      $("#imageModal").on("show.bs.modal", function (event) {
         var button = $(event.relatedTarget);
-        var slideIndex = button.data('slide-to');
-        var carousel = $(this).find('.carousel');
+        var slideIndex = button.data("slide-to");
+        var carousel = $(this).find(".carousel");
         carousel.carousel(slideIndex);
       });
     </script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var title = document.getElementById("title");
+        if (window.scrollY > 50) {
+          title.classList.add("title-expanded");
+        } else {
+          title.classList.remove("title-expanded");
+        }
+      });
+    </script>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+
 
   </body>
 </html>
