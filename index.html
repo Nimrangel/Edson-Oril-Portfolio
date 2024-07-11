@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="./assets/eIcon.png"/>
+    <link rel="shortcut icon" type="image/png" href="./assets/eIcon.png" />
     <title>Edson Portfolio</title>
 
-    <meta name="description" content="description">
-    <meta name="keywords" content="Edson Oril,Edson Oril Portfolio, Edson, HTML, CSS, BootStrap, JavaScript, Angular, Typescript, " />
+    <meta name="description" content="description" />
+    <meta
+      name="keywords"
+      content="Edson Oril,Edson Oril Portfolio, Edson, HTML, CSS, BootStrap, JavaScript, Angular, Typescript, "
+    />
 
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -38,57 +41,77 @@
   </head>
   <body>
     <!-- NavBar -->
-    <nav
-      class="navbar navbar-expand-lg footer-navbar"
-      style="background-color: #1f2833"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" style="color: #66fcf1" href="#">Home</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="#skill">Skills</a>
-            <a class="nav-link" href="#project">Projects</a>
-            <a class="nav-link" href="#experience">Experience</a>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Resume</a>
-          </div>
-        </div>
-      </div>
-    </nav>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <footer>
+      <div class="footer-container">
+        <button class="menu-toggle" id="menu-toggle">
+          &#9776;
+          <!-- Hamburger icon -->
+        </button>
+        <ul class="footer-nav" id="footer-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#about">About</a></li>
+          <li>
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              href="#resume"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Resume</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
             <div class="navResume text-center">
-              
               <iframe src="./assets/OrilEdsonM.pdf" class="resume"></iframe>
-          </div>
+            </div>
           </div>
           <div class="modal-footer">
-            <a href="./assets/OrilEdsonM.pdf"><button type="button" class="btn btn-primary">Download Resume</button></a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="./assets/OrilEdsonM.pdf"
+              ><button type="button" class="btn btn-primary">
+                Download Resume
+              </button></a
+            >
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
     </div>
 
+
+
     
+
     <header id="title" class="title">
       <nav class="navbar navbar-dark" style="background-color: #1f2833">
         <div class="container-fluid">
@@ -142,7 +165,12 @@
                   <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModalRes">Resume</a>
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalRes"
+                    >Resume</a
+                  >
                 </li>
               </ul>
             </div>
@@ -150,22 +178,42 @@
         </div>
       </nav>
     </header>
-    <div class="modal fade" id="exampleModalRes" tabindex="-1" aria-labelledby="exampleModalLabelRes" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="exampleModalRes"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabelRes"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabelRes">Resume</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
             <div class="navResume text-center">
-              
               <iframe src="./assets/OrilEdsonM.pdf" class="resume"></iframe>
-          </div>
+            </div>
           </div>
           <div class="modal-footer">
-            <a href="./assets/OrilEdsonM.pdf"><button type="button" class="btn btn-primary">Download Resume</button></a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="./assets/OrilEdsonM.pdf"
+              ><button type="button" class="btn btn-primary">
+                Download Resume
+              </button></a
+            >
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
@@ -183,7 +231,7 @@
         </div>
         <div class="headerBtn">
           <a href="#about">
-            <button type="button">Contact Me</button>
+            <button type="button">Contact Me!</button>
           </a>
         </div>
       </div>
@@ -225,7 +273,7 @@
           <div class="row text-center pt-5 mt-5">
             <div class="col-md-3">
               <h2>React JS</h2>
-            
+
               <img src="./assets/react.png" alt="react" />
             </div>
 
@@ -1533,8 +1581,5 @@
         }
       }
     </script>
-
-
-
   </body>
 </html>

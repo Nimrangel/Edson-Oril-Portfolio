@@ -40,7 +40,7 @@ body h1 {
 }
 
 .modal-content{
-    border: 1px solid red;
+    
     width: 100%;
     height: auto;
 }
@@ -86,6 +86,8 @@ body h1 {
     background-color: #66fcf1;
     color: black;
     border-radius: 5px;
+    padding: 1rem 3rem;
+    font-weight: bold;
 }
 
 .headerBtn button:hover{
@@ -115,7 +117,6 @@ body h1 {
   justify-content: center;
   align-items: center;
   padding-bottom: 6rem;
-  border: 1px solid red;
   background-color: #1F2833;
 }
 
@@ -239,8 +240,7 @@ body h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
-  width: 100%;
+
   
 }
 
@@ -310,7 +310,7 @@ body h1 {
   justify-content: center;
   align-items: center;
   padding: 5rem;
-  border: 3px solid #66fcf1;
+  /* border: 3px solid #66fcf1; */
   margin: 10px 20px;
 }
 
@@ -380,14 +380,111 @@ body h1 {
   text-decoration: none;
 }
 
+/* footer navBar */
 
+footer {
+  background-color: #1F2833; /* Solid background color */
+    color: #66FCF1;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-nav li a {
+  color: #66FCF1;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  display: none; /* Hidden by default */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-nav {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #444;
+      position: absolute;
+      bottom: 40px; /* Adjust based on footer height */
+      width: 100%;
+      left: 0;
+      padding: 10px 0;
+  }
+
+  .footer-nav.show {
+      display: flex;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+}
+
+/* footer navBar */
 
 @media screen and (max-width: 1200px)
 {
   .header{
     background-size: 1200px 100vh;
+  }
+
+  .skill{
+    background-size: 1200px 100vh;
+  }
+
+  .project {
+    background-size: 1200px 100vh;
+  }
+
+  .experience {
+    background-size: 1200px 100vh;
+  }
+  .about {
+    background-size: 1200px 100vh;
+  }
+
+  .aboutWrapper {
+    padding: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .aboutHeader {
+    padding: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  
+  .aboutMsg {
+    padding: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
   }
 
 }
@@ -398,19 +495,73 @@ body h1 {
     background-size: 992px 100vh;
   }
 
+  .skill{
+    background-size: 992px 100vh;
+  }
+
+  .skillWrapper {
+    padding: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .skillHeader {
+    padding: 0 !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 20px !important;
+  }
+
+  .skillBody img {
+    height: auto !important;
+    width: 100px !important;
+  
+  }
+
+
+
+  .project {
+    background-size: 992px 100vh;
+  }
+
+  .experience {
+    background-size: 992px 100vh;
+  }
+  #about {
+    background-size: 992px 100vh;
+  }
+
 }
 
 @media screen and (max-width: 768px)
 {
-  .header{
+  #header{
     background-size: 768px 100vh;
   }
-  .historyImage{
+  /* .historyImage{
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
     text-align: center;
+  } */
+
+  #skill{
+    background-size: 768px 100vh;
   }
+
+  #project {
+    background-size: 768px 100vh;
+  }
+
+  #experience {
+    background-size: 768px 100vh;
+  }
+  #about {
+    background-size: 768px 100vh;
+  }
+
+  
 
 }
 
@@ -419,12 +570,29 @@ body h1 {
   .header{
     background-size: 576px 100vh;
   }
-
-  .historyImage{
+  #header{
+    background-size: 576px 100vh;
+  }
+  /* .historyImage{
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
     text-align: center;
+  } */
+
+  #skill{
+    background-size: 576px 100vh;
+  }
+
+  #project {
+    background-size: 576px 100vh;
+  }
+
+  #experience {
+    background-size: 576px 100vh;
+  }
+  #about {
+    background-size: 576px 100vh;
   }
 
 }
