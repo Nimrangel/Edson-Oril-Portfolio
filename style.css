@@ -379,3 +379,52 @@ body h1 {
   margin-right: 20px;
   text-decoration: none;
 }
+
+
+
+
+
+@media screen and (max-width: 1200px)
+{
+  .header{
+    background-size: 1200px 100vh;
+  }
+
+}
+
+@media screen and (max-width: 992px)
+{
+  .header{
+    background-size: 992px 100vh;
+  }
+
+}
+
+@media screen and (max-width: 768px)
+{
+  .header{
+    background-size: 768px 100vh;
+  }
+  .historyImage{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 576px)
+{
+  .header{
+    background-size: 576px 100vh;
+  }
+
+  .historyImage{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+}
